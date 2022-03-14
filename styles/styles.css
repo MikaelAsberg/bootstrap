@@ -1,0 +1,9 @@
+body {
+    margin: 20px auto;
+    background-color: lightblue;
+    max-width: 1300px;
+}
+
+.card {
+    width: 18rem;
+}

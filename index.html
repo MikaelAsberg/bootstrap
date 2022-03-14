@@ -5,14 +5,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/normalize.css">
-    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>First Bootstrap</title>
 </head>
 
 <body>
-
-
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary my-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-light"></span>
+          </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Hem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Länkar</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Meny</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Galleri</a></li>
+                                <li><a class="dropdown-item" href="#">Biografi</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Försäljning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled"></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Sök" aria-label="Search">
+                        <button class="btn btn-outline-success text-white bg-primary bi bi-search" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="card__area">
+            <div class="container-fluid d-flex justify-content-center flex-wrap">
+                <div class="flex-row ">
+                    <div class="card m-3">
+                        <img src="/images/Ekorre 220201001_PS.jpg" class="card-img-top" alt="Ekorre">
+                        <div class="card-body">
+                            <h5 class="card-title fs-4">Ekorre <span class="fst-italic">(Sciurus vulgaris)</span></h5>
+                            <p class="card-text fs-6">Ekorren sitter ofta i min tall utanför min studiehörna på landet. Ekorren är ständigt nervös, vilket deras svansryckningar skvallrar om. Fotad med Canon r6 och Canons teleobjektiv 100-400mm IS-2.</p>
+                            <a href="#" class="btn btn-primary">Beställ bilden</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="card m-3">
+                        <img src="/images/Koltrast 220211005_PS.jpg" class="card-img-top" alt="Koltrast">
+                        <div class="card-body">
+                            <h5 class="card-title fs-4">Koltrast <span class="fst-italic">(Turdus merula)</span></h5>
+                            <p class="card-text fs-6">Koltrasten är ofta närvarande, men här ute i skärgården är den något skygg. Koltrasten är en frekvent besökare av våran djurmatning. Fotad med Canon r6 och Canons teleobjektiv 100-400mm IS-2</p>
+                            <a href="#" class="btn btn-primary">Beställ bilden</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3">
+                    <img src="/images/1X0A6518.JPG" class="card-img-top" alt="Kungsfågel">
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Kungsfågel <span class="fst-italic">(Regulus regulus)</span></h5>
+                        <p class="card-text fs-6">Kungsfågeln finns överallt där det finns barrträd. Det är inte ovanligt att dom flyger in i fönsterrutor. Min mänskliga närvaro gör att sparvhöken att inte vill ta den. Efter en mindre hjärnskakning var denna kungsfågel åter på
+                            vingarna, men det dröjde en kvart. Fotad med Canon r6 och Canons makroobjektiv 100mm IS</p>
+                        <a href="#" class="btn btn-primary">Beställ bilden</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="grid__area mt-5">
+            <h1 class="text-center fs-1">Slumpmässiga bilder från Picsum</h1>
+            <p class="text-center mb-3 fs-4">På Picsum finns mängder med olika tillgängliga bilder, som jag har skapat ett gridsystem av.</p>
+            <div class="container">
+                <div class="row row-cols-12">
+                    <div class="col p-1">
+                        <img src="https://picsum.photos/id/237/200/300" alt="hund">
+                    </div>
+                    <div class="col p-1">
+                        <img src="https://picsum.photos/id/236/200/300" alt="Bergsby">
+                    </div>
+                    <div class="col p-1">
+                        <img src="https://picsum.photos/id/235/200/300" alt="Fjällmassiv">
+                    </div>
+                    <div class="col p-1">
+                        <img src="https://picsum.photos/id/234/200/300" alt="Eifeltornet">
+                    </div>
+                    <div class="col p-1">
+                        <img src="https://picsum.photos/id/233/200/300" alt="Tågräls">
+                    </div>
+                    <div class="col p-1">
+                        <img src="https://picsum.photos/id/232/200/300" alt="Lykta">
+                    </div>
+                    <div class="col p-1">
+                        <img src="https://picsum.photos/id/231/200/300" alt="Bergskedja">
+                    </div>
+                    <div class="col p-1">
+                        <img src="https://picsum.photos/id/230/200/300" alt="Flytbrygga">
+                    </div>
+                    <div class="col p-1">
+                        <img src="https://picsum.photos/id/229/200/300" alt="skog">
+                    </div>
+                    <div class="col p-1">
+                        <img src="https://picsum.photos/id/228/200/300" alt="kaj">
+                    </div>
+                    <div class="col p-1">
+                        <img src="https://picsum.photos/id/227/200/300" alt="Tågräls">
+                    </div>
+                    <div class="col p-1">
+                        <img src="https://picsum.photos/id/225/200/300" alt="Perkulator">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center bg-white mt-5">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1 bi bi-facebook" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f "></i
+            ></a>
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter bi bi-twitter"></i
+            ></a>
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1 bi bi-instagram" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i
+            ></a>
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin bi bi-linkedin"></i
+            ></a>
+                <!-- Youtube -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1 bi bi-youtube" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-youtube "></i
+            ></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3 bg-secondary text-white">
+            © 2022 Copyright: Archipelago Photography ||
+            <a class="text-white text-decoration-none" href="#!">www.archiphotography.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
